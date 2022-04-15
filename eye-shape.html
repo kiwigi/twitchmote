@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+    <head>
+        <link rel="stylesheet" type= "text/css" href="site.css">
+        <script src ="script.js"></script>
+    </head>
+
+    <body>
+        <h1>
+            TWITCHMOTE.
+        </h1>
+            <nav>
+                <ul class="menu1">
+                    <li style="border-top-left-radius:20px;">
+                        <a href="face-shape.html">Face 
+                            <img src="icons/face.png" style="width: 100px;" /> 
+                        </a>  
+                    </li>
+                    <li class="active">
+                        <a href="eye-shape.html">Eyes
+                            <img src="icons/eye.png" style="width: 100px;" /> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="lip-shape.html">Lips
+                            <img src="icons/lips.png" style="width: 100px;" /> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="hair-base.html">Hair
+                            <img src="icons/hair.png" style="width: 100px;" /> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="makeup-blush.html">Makeup
+                            <img src="icons/makeup.png" style="width: 100px;" /> 
+                        </a>
+                    </li>
+                    <h2>AVATAR PREVIEW</h2>
+
+                </ul>
+                
+            </nav>
+
+        <section>
+            <ul class="menu2">
+                <li class="active"><a href="eye-shape.html">Shape</a></li>
+                <li><a href="eye-colour.html">Colour</a></li>
+                <li><a href="eye-lashes.html">Lashes</a></li>
+                <li style="border-bottom-left-radius:20px;">
+                    <a href="eye-brows.html">Eyebrows</a>
+                </li>
+                
+            </ul>
+            <div class="elemBox">
+
+                <img src="pictures/eyes.png" onclick="updateAvi('eyes','eyes')"style="width: 200px; cursor: pointer;"/>
+                
+
+            </div>
+
+            <img id= "hairBase" src="pictures/blank.png" onload="this.onload=null; this.src=genPath('hairBase');"
+            class="aviPrev" style="background-color: #f9e7ff; 
+            border-width: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px;" />/>
+            <img id = "face"src="pictures/blank.png" class="aviPrev" onload="this.onload=null; this.src=genPath('face');"/>
+            <img id= "blush" src="pictures/blank.png" class="aviPrev" onload="this.onload=null; this.src=genPath('blush');"/>
+            <img id= "eyebrows" src="pictures/blank.png" class="aviPrev" onload="this.onload=null; this.src=genPath('eyebrows');"/>
+            <img id= "fringe"src="pictures/blank.png" class="aviPrev" onload="this.onload=null; this.src=genPath('fringe');"/>
+            <img id= "eyes"src="pictures/blank.png" class="aviPrev" onload="this.onload=null; this.src=genPath('eyes');"/>
+            <img id= "lipstick" src="pictures/blank.png" class="aviPrev" onload="this.onload=null; this.src=genPath('lipstick');"/>
+            <img id= "lips"src="pictures/blank.png" class="aviPrev" onload="this.onload=null; this.src=genPath('lips');"/>
+            <img id= "eyelashes"src="pictures/blank.png" class="aviPrev" onload="this.onload=null; this.src=genPath('eyelashes');"/>
+            <img id= "shirt"src="pictures/blank.png" class="aviPrev" onload="this.onload=null; this.src=genPath('shirt');"/>
+            
+        </section>
+    <div class="peepee">
+
+        <button type="button" onclick ="alert('Saved XD but not really LOL BOZO + L + RATIO XDDDD')">Save</button>
+        <button type="button" onclick ="alert('Are you sure you want to delete all progress?')">Start over</button>
+        
+    
+    </div>
+    <div class="poopoo">
+        <button type="button" onclick ="alert('BIG PP INDEED')">Save image</button>
+    </div>
+    </body>
+</html>

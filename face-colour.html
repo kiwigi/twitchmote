@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+    <head>
+        <link rel="stylesheet" type= "text/css" href="site.css">
+        <script src ="script.js"></script>   
+    </head>
+
+    <body>
+        <h1>
+            TWITCHMOTE.
+        </h1>
+            <nav>
+                <ul class="menu1">
+                    <li class="active" style="border-top-left-radius:20px;">
+                        <a href="face-shape.html">Face 
+                            <img src="icons/face.png" style="width: 100px;" /> 
+                        </a>  
+                    </li>
+                    <li>
+                        <a href="eye-shape.html">Eyes
+                            <img src="icons/eye.png" style="width: 100px;" /> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="lip-shape.html">Lips
+                            <img src="icons/lips.png" style="width: 100px;" /> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="hair-base.html">Hair
+                            <img src="icons/hair.png" style="width: 100px;" /> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="makeup-blush.html">Makeup
+                            <img src="icons/makeup.png" style="width: 100px;" /> 
+                        </a>
+                    </li>
+                    <h2>AVATAR PREVIEW</h2>
+
+                </ul>
+                
+            </nav>
+
+        <section>
+            <ul class="menu2">
+                <li><a href="face-shape.html">Shape</a></li>
+                <li class="active">
+                    <a href="face-colour.html">Colour</a>
+                </li>
+                <li style="border-bottom-left-radius:20px;">
+                    <a href="face-shirt.html">Shirt</a>
+                </li>
+            </ul>
+            
+            <div class="elemBox">
+                <img src="pictures/face-pale.png" onclick="updateAvi('face','face-pale')" style="width: 150px; cursor: pointer;"/> 
+                <img src="pictures/face.png" onclick="updateAvi('face','face')" style="width: 150px; cursor: pointer;"/>
+                <img src="pictures/face-tan.png" onclick="updateAvi('face','face-tan')" style="width: 150px; cursor: pointer;"/>
+                <img src="pictures/face-dark.png" onclick="updateAvi('face','face-dark')" style="width: 150px; cursor: pointer;"/>
+                <img src="pictures/face-dark2.png" onclick="updateAvi('face','face-dark2')" style="width: 150px; cursor: pointer;"/>
+
+            </div>
+            
+            <div class="aviPreview" id="resultingPic">
+                <img id= "hairBase" src="pictures/blank.png" onload=" this.onload=null; this.src=genPath('hairBase'); "
+                 style="background-color: #f9e7ff; width:500px; 
+                border-width: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px;" />
+                <img id = "face"src="pictures/blank.png"  onload="this.onload=null; this.src=genPath('face');"/> 
+                <img id= "blush" src="pictures/blank.png"  onload="this.onload=null; this.src=genPath('blush');"/>
+                <img id= "eyebrows" src="pictures/blank.png"  onload="this.onload=null; this.src=genPath('eyebrows');"/>
+                <img id= "fringe"src="pictures/blank.png" onload="this.onload=null; this.src=genPath('fringe');"/>
+                <img id= "eyes"src="pictures/blank.png"  onload="this.onload=null; this.src=genPath('eyes');"/>
+                <img id= "lipstick" src="pictures/blank.png"  onload="this.onload=null; this.src=genPath('lipstick');"/>
+                <img id= "lips"src="pictures/blank.png"  onload="this.onload=null; this.src=genPath('lips');"/>
+                <img id= "eyelashes"src="pictures/blank.png" onload="this.onload=null; this.src=genPath('eyelashes');"/>
+                <img id= "shirt"src="pictures/blank.png"  onload="this.onload=null; this.src=genPath('shirt');"/> 
+            </div>
+        </section>
+    <div class="butons1">
+
+        <button type="button" onclick ="save()">Save progress</button>
+        <button type="button" onclick ="startOver()">Start over</button>
+        
+    
+    </div>
+    <div class="button2">
+        <button id="myBtn" type="button" onclick ="downloadImage()">Download image</button>
+    </div>
+    <!-- The Modal -->
+    <div id="downloadSettings" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+        <div class="aviPreviewMINI">
+            <img id= "hairBase" src="pictures/blank.png" onload=" this.onload=null; this.src=genPath('hairBase'); " />
+            <img id = "face"src="pictures/blank.png"  onload="this.onload=null; this.src=genPath('face');"/> 
+            <img id= "blush" src="pictures/blank.png"  onload="this.onload=null; this.src=genPath('blush');"/>
+            <img id= "eyebrows" src="pictures/blank.png"  onload="this.onload=null; this.src=genPath('eyebrows');"/>
+            <img id= "fringe"src="pictures/blank.png" onload="this.onload=null; this.src=genPath('fringe');"/>
+            <img id= "eyes"src="pictures/blank.png"  onload="this.onload=null; this.src=genPath('eyes');"/>
+            <img id= "lipstick" src="pictures/blank.png"  onload="this.onload=null; this.src=genPath('lipstick');"/>
+            <img id= "lips"src="pictures/blank.png"  onload="this.onload=null; this.src=genPath('lips');"/>
+            <img id= "eyelashes"src="pictures/blank.png" onload="this.onload=null; this.src=genPath('eyelashes');"/>
+            <img id= "shirt"src="pictures/blank.png"  onload="this.onload=null; this.src=genPath('shirt');"/> 
+        </div>
+    </div>
+  
+  </div>
+
+
+       <!--These scripts help convert div to image so we can save it to device-->
+       <script src="html2canvas.js"></script>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    
+    </body>
+</html>
